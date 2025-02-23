@@ -1,6 +1,4 @@
-@import "./config.css";
-
-@import "./leftside.css";
+@import "./chart.css";
 
 .hamburger:hover {
   color: gray;
@@ -12,8 +10,8 @@
 }
 
 /*.dropdown-menu > *:hover{
-	background: var(--hover) !important;
-}*/
+      background: var(--hover) !important;
+  }*/
 
 .dropdown-menu > li > a:hover {
   background-image: none;
@@ -56,11 +54,11 @@
 }
 
 /*.right-sidebar > * div{
-	width: 100px;
-	min-width: 100px;
-	max-width: 100px;
-	overflow-x: hidden;
-}*/
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
+      overflow-x: hidden;
+  }*/
 
 .right-sidebar > *:hover span {
   color: white;
@@ -69,9 +67,9 @@
 }
 
 /* .w-90 {
-  width: 90%;
-  transition: all 0.3s ease-in-out;
-} */
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+  } */
 
 .w-5 {
   width: 10%;
@@ -82,25 +80,6 @@
 .w-expanded {
   width: 200px;
   transition: all 0.3s ease-in-out;
-}
-
-.w-10 {
-  min-width: 70px;
-  max-width: 150px;
-  width: 20%;
-  transition: 0.3s all ease-in-out;
-}
-
-.w-10.expanded {
-  min-width: 200px;
-  max-width: 300px;
-  width: 30%;
-}
-
-.border-gray {
-  border-color: rgb(100, 100, 100) !important;
-  /*border-color: yellow !important;*/
-  border-width: 3px !important;
 }
 
 @media (max-width: 400px) {

@@ -1,0 +1,39 @@
+.leftside span {
+  /*visibility: hidden;*/
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.leftside.expanded span {
+  /*visibility: visible;*/
+  opacity: 1;
+}
+
+.leftside > * {
+  cursor: pointer;
+}
+
+.leftside > *:hover {
+  background: var(--hover);
+}
+
+.leftside > *.upper-icon {
+  cursor: inherit;
+}
+
+.leftside > *:hover.upper-icon {
+  background: var(--primary);
+}
+
+.w-10 {
+  min-width: 70px;
+  max-width: 150px;
+  width: 20%;
+  transition: 0.3s all ease-in-out;
+}
+
+.w-10.expanded {
+  min-width: 200px;
+  max-width: 300px;
+  width: 30%;
+}
