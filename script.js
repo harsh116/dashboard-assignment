@@ -38,6 +38,12 @@ const requestsLabels = [
   "Rejected Requests",
 ].map((caseLabel, i) => `${requestDataPercents[i]} - ${caseLabel}`);
 
+const tmaData = [120, 90, 60, 100];
+const faData = [100, 70, 50, 90];
+const udaData = [110, 30, 71, 97];
+const osintData = [40, 50, 110, 56];
+const dfData = [120, 100, 55, 100];
+
 const chartoptions = {
   //   scales: {
   //     x: {
@@ -223,6 +229,55 @@ function casesBarChartDraw() {
 
     options: bargraphOptions,
   });
+
+  // bar graph update section
+
+  let navElementSectionSelected = document.querySelector("#tma");
+
+  // callback function listening to all 5 sections to update bar graph
+
+  document
+    .querySelector(".bar-graph-section .nav")
+    .addEventListener("click", (e) => {
+      console.log(e.target);
+
+      navElementSectionSelected.classList.remove("selected");
+      navElementSectionSelected = e.target;
+      navElementSectionSelected.classList.add("selected");
+
+      const id = e.target.getAttribute("id");
+
+      switch (id) {
+        case "tma":
+          updateData(casesBarChart, tmaData);
+          break;
+        case "fa":
+          updateData(casesBarChart, faData);
+          break;
+        case "uda":
+          updateData(casesBarChart, udaData);
+          break;
+        case "osint":
+          updateData(casesBarChart, osintData);
+          break;
+        case "df":
+          updateData(casesBarChart, dfData);
+          break;
+      }
+
+      // console.log("id: ", id);
+    });
+}
+
+function updateData(chart, newData) {
+  chart.data.datasets.forEach((dataset) => {
+    dataset.data.pop();
+  });
+
+  chart.data.datasets.forEach((dataset) => {
+    dataset.data = [...newData];
+  });
+  chart.update();
 }
 
 totalCasesDraw();

@@ -27,7 +27,7 @@
 
 .w-10 {
   min-width: 70px;
-  max-width: 150px;
+  max-width: 100px;
   width: 20%;
   transition: 0.3s all ease-in-out;
 }

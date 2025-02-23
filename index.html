@@ -152,7 +152,7 @@
             class="right-sidebar position-absolute end-0 top-0 w-5 fs-large overflow-hidden"
           >
             <div
-              class="first_list p-2 ps-2 d-flex align-items-center text-black text-nowrap text-center my-3 mb-5"
+              class="first_list p-2 ps-2 d-flex align-items-center justify-content-around text-black text-nowrap text-center my-3 mb-5"
             >
               <i class="fa-solid fa-database"></i>
               <!-- <div class=""> -->
@@ -171,7 +171,7 @@
             </div>
 
             <div
-              class="third_list d-flex p-2 ps-2 align-items-center text-black text-nowrap text-center my-3 mb-5"
+              class="third_list d-flex p-2 ps-2 align-items-center justify-content-around text-black text-nowrap text-center my-3 mb-5"
             >
               <!-- <i class="fa-solid  fa-database "></i> -->
               <!-- <img src="assets/india-svgrepo-com.svg" alt="map" width="24" height="24"> -->
@@ -204,7 +204,7 @@
           <div class="row m-0 doughnuts">
             <!-- first doughnut -->
             <div
-              class="border border-2 col-md-5 col-10 border-dark m-2 ms-md-4 rounded d-flex flex-column align-items-center justify-content-center"
+              class="border border-2 col-md-5 col-10 border-dark m-2 ms-md-5 rounded d-flex flex-column align-items-center justify-content-center"
             >
               <h2>Total Cases - <span id="casesNumbers">500</span></h2>
               <div class="doughnut position-relative">
@@ -242,16 +242,16 @@
           <!-- bar graph -->
           <div class="bar-graph-section row m-0">
             <div
-              class="col-10 border border-dark border-2 rounded m-2 mx-md-4 p-0"
+              class="col-10 border border-dark border-2 rounded m-2 mx-md-5 p-0"
             >
               <div
                 class="nav d-flex w-100 text-white m-0 text-center fs-3 fw-bolder"
               >
-                <div class="white-gap-right selected">TMA</div>
-                <div class="white-gap-right">FA</div>
-                <div class="white-gap-right">UDA</div>
-                <div class="white-gap-right">OSINT</div>
-                <div class="">DF</div>
+                <div id="tma" class="white-gap-right selected">TMA</div>
+                <div id="fa" class="white-gap-right">FA</div>
+                <div id="uda" class="white-gap-right">UDA</div>
+                <div id="osint" class="white-gap-right">OSINT</div>
+                <div id="df" class="">DF</div>
               </div>
               <div class="bar-graph">
                 <canvas style="width: 100%" id="casesBarChart"></canvas>
