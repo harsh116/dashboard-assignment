@@ -72,8 +72,6 @@ function casesBarChartDraw() {
   document
     .querySelector(".bar-graph-section .nav")
     .addEventListener("click", (e) => {
-      console.log(e.target);
-
       navElementSectionSelected.classList.remove("selected");
       navElementSectionSelected = e.target;
       navElementSectionSelected.classList.add("selected");
@@ -97,8 +95,6 @@ function casesBarChartDraw() {
           updateData(casesBarChart, dfData);
           break;
       }
-
-      // console.log("id: ", id);
     });
 }
 
