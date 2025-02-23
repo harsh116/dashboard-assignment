@@ -141,7 +141,7 @@
         </div>
 
         <!-- below the header section of the right side. it contains rightside panel of position absolute and charts -->
-        <div class="position-relative">
+        <div class="mh-80-vh position-relative overflow-auto">
           <!-- right sidebar -->
           <div
             class="right-sidebar position-absolute end-0 top-0 w-5 fs-large overflow-hidden"
@@ -192,6 +192,41 @@
           </div>
 
           <!-- contains charts -->
+
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+          <!-- doughnuts -->
+          <div class="row m-0 doughnuts">
+            <!-- first doughnut -->
+            <div
+              class="border border-2 col-md-5 col-10 border-dark m-2 rounded d-flex flex-column align-items-center justify-content-center"
+            >
+              <h2>Total Cases - <span id="casesNumbers">500</span></h2>
+              <div class="doughnut position-relative">
+                <canvas style="width: 100%" id="totalCasesChart"></canvas>
+              </div>
+            </div>
+
+            <!-- second doughnut -->
+
+            <div
+              class="border border-2 border-dark m-2 rounded d-flex flex-column align-items-center justify-content-center col-md-5 col-10"
+            >
+              <h2>Total Requests - <span id="requestsNumbers">500</span></h2>
+              <div class="doughnut position-relative">
+                <canvas style="width: 100%" id="totalRequestsChart"></canvas>
+              </div>
+            </div>
+
+            <!-- <div
+              class="doughnut col-md-5 col-10 d-flex justify-content-center position-relative border border-2 border-dark m-2 rounded me-4"
+            >
+              <canvas id="totalRequestsChart" tyle="width: 100%;"></canvas>
+            </div> -->
+          </div>
+
+          <!-- <canvas id="totalRequestsChart"></canvas> -->
+
           <div class="z-5">
             <h1 class="">
               lorem ipsim lorem ipsim lorem ipsim lorem ipsim lorem ipsim lorem

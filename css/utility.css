@@ -29,6 +29,10 @@
   font-size: 0.8rem;
 }
 
+.mh-80-vh {
+  max-height: 80vh;
+}
+
 .border-gray {
   border-color: rgb(100, 100, 100) !important;
   /*border-color: yellow !important;*/

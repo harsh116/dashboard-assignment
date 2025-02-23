@@ -1,0 +1,16 @@
+.doughnuts canvas {
+  max-width: 100%;
+}
+
+.doughnut {
+  width: 100%;
+  height: 40vh;
+  min-height: 300px;
+}
+
+@media (max-width: 400px) {
+  .doughnut {
+    height: 40vh;
+    min-height: 200px;
+  }
+}
