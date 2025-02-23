@@ -1,0 +1,210 @@
+:root {
+  --primary: #1F305E;
+  --hover: #4682B4;
+}
+
+.bg-primary-dark{
+	background: var(--primary);
+}
+
+
+.leftside span{
+	/*visibility: hidden;*/
+	opacity: 0;
+	transition: all .3s ease-in-out;
+}
+
+
+
+.leftside.expanded  span{
+	/*visibility: visible;*/
+	opacity: 1;
+}
+
+.leftside > *{
+	cursor: pointer;
+}
+
+.leftside > *:hover{
+	background: var(--hover);
+}
+
+.leftside > *.upper-icon{
+	cursor : inherit;
+}
+
+.hamburger:hover{
+	color: gray;
+}
+
+.leftside > *:hover.upper-icon{
+	background: var(--primary);
+}
+
+.account-dropdown:hover{
+	/*background: var(--hover);*/
+	/*color: gray;*/
+}
+
+/*.dropdown-menu > *:hover{
+	background: var(--hover) !important;
+}*/
+
+
+.dropdown-menu > li > a:hover {
+    background-image: none;
+    background-color: var(--hover);
+    color: white;
+}
+
+.right-sidebar{
+	/*z-index: 0;*/
+	pointer-events: none;
+}
+
+.z-5{
+	/*z-index: 50;*/
+	/*cursor: pointer;*/
+}
+
+.right-sidebar > *{
+	transition: all .3s ease-in-out;
+	transform : translateX(50%);
+	color: black;
+	pointer-events: auto;
+	cursor: pointer;
+	/*z-index: 10;*/
+}
+
+
+.right-sidebar > *:hover{
+	transform: translateX(0);
+	background: var(--hover);
+	color: white !important;
+	border-top-left-radius: 999px;
+	border-bottom-left-radius: 999px;
+
+}
+
+.right-sidebar > *  span{
+	color: transparent;
+	/*display: none*/
+	visibility: hidden;
+	width: 100px;
+
+}
+
+/*.right-sidebar > * div{
+	width: 100px;
+	min-width: 100px;
+	max-width: 100px;
+	overflow-x: hidden;
+}*/
+
+.right-sidebar > *:hover  span{
+	color: white;
+	/*display: inline;*/
+	visibility: visible;
+}
+
+
+.pointer{
+	cursor: pointer;
+}
+
+.flex-grow {
+	/*flex-grow: 1;*/
+	flex: 1;
+}
+
+.h-full{
+	min-height: 100vh;
+}
+
+.w-90{
+	width : 90%;
+	transition:  .all .3s ease-in-out;
+}
+
+.w-5{
+	width: 10%;
+	max-width: 200px;
+	min-width: 150px;
+}
+
+.w-expanded{
+	width: 200px;
+	transition: all .3s ease-in-out;
+}
+
+.w-10{
+
+	min-width: 70px;
+	max-width: 150px;
+	width: 20%;
+	transition:  .3s all ease-in-out
+}
+
+.w-10.expanded{
+	min-width: 200px;
+	max-width: 300px;
+	width: 30%;
+
+}
+
+.w-90.expanded{
+	width: 80%;
+}
+
+.border-gray{
+	border-color: rgb(100,100,100) !important;
+	/*border-color: yellow !important;*/
+	border-width: 3px !important;
+}
+
+.fs-large{
+	font-size: 3rem;
+}
+
+.fs-large-2{
+	font-size: 2.5rem;
+}
+
+.fs-7{
+	font-size: 0.8rem;
+}
+
+@media (max-width: 400px){
+	.fs-large{
+		font-size: 2rem;
+	}
+
+	.fs-3{
+		font-size: 1.1rem !important;
+	}
+
+	.fs-7{
+		font-size: 0.6rem;
+	}
+
+	.w-5{
+		width: 10%;
+		max-width: 170px;
+		min-width: 120px;
+}
+
+}
+
+@media (min-width: 400px) and (max-width: 700px){
+	.fs-large{
+		font-size: 2.5rem;
+	}
+
+	.fs-3{
+		font-size: 1.3rem !important;
+	}
+
+	.fs-7{
+		font-size: 0.7rem;
+	}
+}
