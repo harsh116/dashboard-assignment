@@ -1,11 +1,50 @@
+@import "./config.css";
 .doughnuts canvas {
   max-width: 100%;
 }
 
 .doughnut {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   min-height: 300px;
+}
+
+.bar-graph {
+  height: 30vh;
+  min-height: 300px;
+}
+
+.bar-graph-section .nav > * {
+  width: 20%;
+  background-color: var(--primary);
+  padding: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.bar-graph-section .nav > *::after {
+  /* content: url("assets/padlock-3-16.ico"); */
+  content: "\f023";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.7rem;
+  font-family: "Font Awesome 6 Free";
+  color: white;
+}
+
+.bar-graph-section .nav > *.selected::after {
+  /* content: url("assets/padlock-3-16.ico"); */
+  content: "";
+}
+
+.bar-graph-section .nav > *:hover,
+.bar-graph-section .nav > *.selected {
+  background-color: var(--hover-secondary);
+}
+
+.bar-graph-section .white-gap-right {
+  border-right: 1px solid white;
 }
 
 @media (max-width: 400px) {
