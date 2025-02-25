@@ -11,3 +11,20 @@ function expand() {
 totalCasesDraw();
 totalRequestsDraw();
 casesBarChartDraw();
+
+// expand  rightside bar on click
+document.querySelector(".right-sidebar").addEventListener("click", (e) => {
+  // if (e.target.parentElement.getAttribute("class").includes("right-sidebar")) {
+  console.log("right sidebar click detected");
+  // }
+
+  document.querySelector(".right-sidebar").classList.toggle("expanded");
+});
+
+// document.querySelector("body").addEventListener("click", (e) => {
+//   if (!e.target.getAttribute("class").includes("right-sidebar")) {
+//     document.querySelector(".right-sidebar").classList.remove("expanded");
+//   } else {
+//     document.querySelector(".right-sidebar").classList.toggle("expanded");
+//   }
+// });

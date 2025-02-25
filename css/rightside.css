@@ -1,66 +1,85 @@
 @import "./chart.css";
 
 .hamburger:hover {
-    color: gray;
+  color: gray;
 }
 
 .account-dropdown:hover {
 }
 
 .dropdown-menu > li > a:hover {
-    background-image: none;
-    background-color: var(--hover);
-    color: white;
+  background-image: none;
+  background-color: var(--hover);
+  color: white;
 }
 
 .right-sidebar {
-    pointer-events: none;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.right-sidebar.expanded {
+  background-color: var(--primary);
+}
+
+.right-sidebar.expanded > * {
+  /* color: white !important; */
+  transform: translateX(0%);
+}
+
+.right-sidebar.expanded * {
+  color: white !important;
 }
 
 .right-sidebar > * {
-    transition: all 0.3s ease-in-out;
-    transform: translateX(50%);
-    color: black;
-    pointer-events: auto;
-    cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(50%);
+  color: black;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.right-sidebar.expanded > * > span {
+  color: white !important;
+  visibility: visible;
 }
 
 .right-sidebar > *:hover {
-    transform: translateX(0);
-    background: var(--hover);
-    color: white !important;
-    border-top-left-radius: 999px;
-    border-bottom-left-radius: 999px;
+  transform: translateX(0);
+  background: var(--hover);
+  color: white !important;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
 }
 
 .right-sidebar > * span {
-    color: transparent;
+  color: transparent;
 
-    visibility: hidden;
-    width: 100px;
+  visibility: hidden;
+  width: 100px;
 }
 
 .right-sidebar > *:hover span {
-    color: white;
-    /*display: inline;*/
-    visibility: visible;
+  color: white;
+  /*display: inline;*/
+  visibility: visible;
 }
 
 .w-5 {
-    width: 10%;
-    max-width: 200px;
-    min-width: 150px;
+  width: 10%;
+  max-width: 200px;
+  min-width: 150px;
 }
 
 .w-expanded {
-    width: 200px;
-    transition: all 0.3s ease-in-out;
+  width: 200px;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 400px) {
-    .w-5 {
-        width: 10%;
-        max-width: 170px;
-        min-width: 120px;
-    }
+  .w-5 {
+    width: 10%;
+    max-width: 170px;
+    min-width: 120px;
+  }
 }
