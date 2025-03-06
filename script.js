@@ -28,3 +28,8 @@ document.querySelector(".right-sidebar").addEventListener("click", (e) => {
 //     document.querySelector(".right-sidebar").classList.toggle("expanded");
 //   }
 // });
+
+document.querySelectorAll(".right-sidebar span").forEach((ele) => {
+  console.log("ele width: ", ele.offsetWidth);
+  ele.parentElement.style.transform = `translateX(${ele.offsetWidth}px)`;
+});

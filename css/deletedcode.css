@@ -1,0 +1,18 @@
+.right-sidebar.expanded {
+  /* width: 100px; */
+  background-color: var(--primary);
+}
+
+.right-sidebar.expanded > * {
+  /* color: white !important; */
+  transform: translateX(0%);
+}
+
+.right-sidebar.expanded * {
+  color: white !important;
+}
+
+.right-sidebar.expanded > * > span {
+  color: white !important;
+  visibility: visible;
+}
