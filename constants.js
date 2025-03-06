@@ -1,6 +1,6 @@
 const tickColor = "rgb(0,0,150)";
 
-const totalCases = 1500;
+const totalCases = 400;
 const totalRequests = 500;
 
 // const casesData = [150, 80, 90, 120, 110];

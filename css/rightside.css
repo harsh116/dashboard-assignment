@@ -15,10 +15,13 @@
 
 .right-sidebar {
   pointer-events: none;
+  /* transform: translateX(50%); */
+  /* width: 150px; */
   transition: all 0.2s ease-in-out;
 }
 
 .right-sidebar.expanded {
+  /* width: 100px; */
   background-color: var(--primary);
 }
 
@@ -33,7 +36,7 @@
 
 .right-sidebar > * {
   transition: all 0.3s ease-in-out;
-  transform: translateX(50%);
+  transform: translateX(100px);
   color: black;
   pointer-events: auto;
   cursor: pointer;
